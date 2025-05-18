@@ -6,8 +6,8 @@ import altair as alt
 import plotly.express as px
 from weather_data_processing import preprocess_new_data
 
-df = pd.read_csv("weather-dataset-rattle-package/weatherAUS.csv")
-model_all = joblib.load('aussie_rain.joblib')
+df = pd.read_csv("data/weatherAUS.csv")
+model_all = joblib.load('models/aussie_rain.joblib')
 input_cols = model_all['input_cols']
 encoder = model_all['encoder']
 scaler = model_all['scaler']
