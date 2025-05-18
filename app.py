@@ -71,7 +71,6 @@ input_dict = {
 
 input_df = pd.DataFrame(input_dict)
 data = preprocess_new_data(input_df, input_cols, encoder, scaler, imputer)
-st.dataframe(data)
 
 if st.button("Передбачити дощ"):
     
